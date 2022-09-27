@@ -15,10 +15,10 @@ RSpec.describe"Employee show page" do
     @ticket_3 = Ticket.create!(subject: "Health", age:7, open: true )
     @ticket_4 = Ticket.create!(subject: "Staff", age: 9, open: false )
     @ticket_5 = Ticket.create!(subject: "Staff", age: 8, open: true)
-    @employeeticket_1 = Employeeticket.create!(employee_id: @employee_1.id, ticket_id: @ticket_1)
-    @employeeticket_2 = Employeeticket.create!(employee_id: @employee_2.id, ticket_id: @ticket_2)
-    @employeeticket_3 = Employeeticket.create!(employee_id: @employee_1.id, ticket_id: @ticket_3)
-    @employeeticket_4 = Employeeticket.create!(employee_id: @employee_1.id, ticket_id: @ticket_5)
+    @employeeticket_1 = Employeeticket.create!(employee_id: @employee_1.id, ticket_id: @ticket_1.id)
+    @employeeticket_2 = Employeeticket.create!(employee_id: @employee_2.id, ticket_id: @ticket_2.id)
+    @employeeticket_3 = Employeeticket.create!(employee_id: @employee_1.id, ticket_id: @ticket_3.id)
+    @employeeticket_4 = Employeeticket.create!(employee_id: @employee_1.id, ticket_id: @ticket_5.id)
     
 
   end
