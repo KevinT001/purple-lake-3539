@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :departments, only: [:index]
 
-  resources :departments, only: [:index, :show]
+  resources :employees, only: [:show]
 end

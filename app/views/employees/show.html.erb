@@ -1,0 +1,9 @@
+<h1>Employee Information </h1>
+<br>
+<p>Employee name: <%=@employee.name %></p>
+<p>Employee Dept: <%=@employee.department.name %></p>
+
+<% @employee.tickets.each do |ticket|%>
+  <p> Employee Ticket: <%= ticket.subject%> </p>
+  <p> Age: <%=ticket.age%> </p>
+<% end %>
